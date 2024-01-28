@@ -54,6 +54,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   ),
                   const Spacer(),
                 const Booklyrating(),
+                const SizedBox(width: 5),
                   ] 
                 ),
                 
