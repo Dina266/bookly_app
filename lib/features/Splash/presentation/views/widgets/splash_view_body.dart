@@ -1,9 +1,6 @@
-import 'package:bookly_app/constants.dart';
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../Home/presentation/views/home_view.dart';
 import 'sliding_animation.dart';
 
 class SplashViewBody extends StatefulWidget {
