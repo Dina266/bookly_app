@@ -24,8 +24,8 @@ class BookListVieItem extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Colors.blue,
-                    image:
-                        DecorationImage(image: AssetImage(AssetsData.testImage))),
+                    image: DecorationImage(
+                        image: AssetImage(AssetsData.testImage))),
               ),
             ),
             const SizedBox(
@@ -39,7 +39,8 @@ class BookListVieItem extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * .5,
                     child: Text(
                       'Harry Potter and the Goblet of Fire',
-                      style: Styles.textStyle20.copyWith(fontFamily: kGTSectraFine),
+                      style: Styles.textStyle20
+                          .copyWith(fontFamily: kGTSectraFine),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -50,18 +51,16 @@ class BookListVieItem extends StatelessWidget {
                     style: Styles.textStyle14,
                   ),
                   const SizedBox(height: 3),
-                  Row(
-                    children:[
-                      Text(
+                  Row(children: [
+                    Text(
                       '9.91 €',
-                      style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),
+                      style: Styles.textStyle20
+                          .copyWith(fontWeight: FontWeight.bold),
                     ),
                     const Spacer(),
-                  const Booklyrating(),
-                  const SizedBox(width: 5),
-                    ] 
-                  ),
-                  
+                    const Booklyrating(),
+                    const SizedBox(width: 5),
+                  ]),
                 ],
               ),
             )
@@ -71,4 +70,3 @@ class BookListVieItem extends StatelessWidget {
     );
   }
 }
-

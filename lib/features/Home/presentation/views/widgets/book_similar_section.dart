@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import 'similar_book_list_view.dart';

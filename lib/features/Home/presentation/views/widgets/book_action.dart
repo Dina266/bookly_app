@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'custom_button.dart';
@@ -12,7 +11,8 @@ class BookAction extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 8.0),
       child: Row(
         children: [
-          Expanded(child: CustomButton(
+          Expanded(
+              child: CustomButton(
             text: '19.99€',
             textColor: Colors.black,
             backgroundColor: Colors.white,
@@ -20,9 +20,9 @@ class BookAction extends StatelessWidget {
               topLeft: Radius.circular(12),
               bottomLeft: Radius.circular(12),
             ),
-          )
-          ),
-          Expanded(child: CustomButton(
+          )),
+          Expanded(
+              child: CustomButton(
             fontSize: 16,
             text: 'Free preview',
             textColor: Colors.white,
@@ -31,8 +31,7 @@ class BookAction extends StatelessWidget {
               topRight: Radius.circular(12),
               bottomRight: Radius.circular(12),
             ),
-          )
-          ),
+          )),
         ],
       ),
     );

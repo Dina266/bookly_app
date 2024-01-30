@@ -9,11 +9,11 @@ class FeaturedListView extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.height * .3,
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,
+          scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const Padding(
-            padding: EdgeInsets.only(right :8.0 , bottom: 8 , top: 8),
-            child: CustomBookImage(),
-          )),
+                padding: EdgeInsets.only(right: 8.0, bottom: 8, top: 8),
+                child: CustomBookImage(),
+              )),
     );
   }
 }
