@@ -7,8 +7,8 @@ import 'package:go_router/go_router.dart';
 
 import 'bookly_rating.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListVieItem extends StatelessWidget {
+  const BookListVieItem({super.key});
 
   @override
   Widget build(BuildContext context) {
