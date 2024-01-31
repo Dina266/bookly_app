@@ -1,21 +1,21 @@
 part of 'newest_book_cubit.dart';
 
-sealed class NewestBookCubitState extends Equatable {
-  const NewestBookCubitState();
+sealed class NewestBookState extends Equatable {
+  const NewestBookState();
 
   @override
   List<Object> get props => [];
 }
 
-final class NewestBookCubitInitial extends NewestBookCubitState {}
-final class NewestBookCubitLoading extends NewestBookCubitState {}
-final class NewestBookCubitFailure extends NewestBookCubitState {
+final class NewestBookInitial extends NewestBookState {}
+final class NewestBookLoading extends NewestBookState {}
+final class NewestBookFailure extends NewestBookState {
   final String errMessage;
 
-  const NewestBookCubitFailure(this.errMessage);
+  const NewestBookFailure(this.errMessage);
 }
-final class NewestBookCubitSuccess extends NewestBookCubitState {
+final class NewestBookSuccess extends NewestBookState {
   final List<BookModel> books;
 
-  const NewestBookCubitSuccess(this.books);
+  const NewestBookSuccess(this.books);
 }

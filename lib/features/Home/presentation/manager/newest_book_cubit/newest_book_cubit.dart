@@ -6,16 +6,16 @@ import '../../../data/repos/home_repo.dart';
 
 part 'newest_book_state.dart';
 
-class NewestBookCubitCubit extends Cubit<NewestBookCubitState> {
-  NewestBookCubitCubit(this.homeRepo) : super(NewestBookCubitInitial());
+class NewestBookCubit extends Cubit<NewestBookState> {
+  NewestBookCubit(this.homeRepo) : super(NewestBookInitial());
 
   final HomeRepo homeRepo;
 
   Future<void> featchNewestBook() async {
-    emit(NewestBookCubitLoading());
+    emit(NewestBookLoading());
     var result = await homeRepo.fetchFeaturedBooks();
 
-    result.fold((failure) => emit(NewestBookCubitFailure(failure.errMessage)),
-        (books) => emit(NewestBookCubitSuccess(books)));
+    result.fold((failure) => emit(NewestBookFailure(failure.errMessage)),
+        (books) => emit(NewestBookSuccess(books)));
   }
 }
