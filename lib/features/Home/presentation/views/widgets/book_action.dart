@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/widgets/custom_button.dart';
+import 'custom_button.dart';
 
 class BookAction extends StatelessWidget {
   const BookAction({super.key});
