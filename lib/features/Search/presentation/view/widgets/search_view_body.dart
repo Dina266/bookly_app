@@ -1,7 +1,6 @@
 import 'package:bookly_app/features/Search/presentation/view/widgets/custom_search_text_field.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../../Home/presentation/views/widgets/book_view_item.dart';
 
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
@@ -39,7 +38,8 @@ class SearchListView extends StatelessWidget {
         itemCount: 10,
         itemBuilder: (context, index) => const Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
-              child: BookListVieItem(),
+              // child: BookListVieItem(),
+              child: Text('data'),
             ));
   }
 }
