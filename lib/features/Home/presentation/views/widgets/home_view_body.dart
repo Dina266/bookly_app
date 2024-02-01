@@ -21,7 +21,7 @@ class HomeViewBody extends StatelessWidget {
                 child: CustomAppBar(),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 0),
+                padding: EdgeInsets.only(left: 10),
                 child: FeaturedListView(),
               ),
               SizedBox(
